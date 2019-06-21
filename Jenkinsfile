@@ -2,11 +2,15 @@ pipeline {
   agent {
     docker {
       image 'node:6-alpine'
-      args '''-p 3000:3000
--u 0:0'''
+      args '-p 3000:3000'
+      args '-u 0:0'
     }
 
   }
+    environment {
+        HOME = '.'
+        CI = 'true'
+    }
   stages {
     stage('Build') {
       steps {
@@ -14,11 +18,3 @@ pipeline {
       }
     }
   }
-<<<<<<< HEAD
-}
-=======
-  environment {
-    HOME = '\'.\''
-  }
-}
->>>>>>> b3ea2a63aaa48c252df5accc99e37f07f27cbd64
