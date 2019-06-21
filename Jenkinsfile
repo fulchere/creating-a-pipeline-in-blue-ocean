@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install nodemon --no-optional'
+        sh 'npm install'
       }
     }
   }
