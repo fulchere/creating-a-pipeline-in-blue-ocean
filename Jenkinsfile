@@ -8,8 +8,6 @@ pipeline {
 
   }
     environment {
-        HOME = '.'
-        CI = 'true'
     }
   stages {
     stage('Build') {
