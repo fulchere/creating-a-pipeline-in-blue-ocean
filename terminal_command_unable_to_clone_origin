@@ -1,0 +1,1 @@
+sudo chown -Rh jenkins:jenkins /var/lib/jenkins/workspace/-a-pipeline-in-blue-ocean_master
